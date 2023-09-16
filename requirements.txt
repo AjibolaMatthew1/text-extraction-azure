@@ -1,0 +1,2 @@
+streamlit 
+azure-cognitiveservices-vision-computervision==0.7.0
