@@ -1,7 +1,7 @@
 import streamlit as st
-from PIL import Image
+#from PIL import Image
 
-from dotenv import load_dotenv
+#from dotenv import load_dotenv
 import os
 import time
 
@@ -10,7 +10,7 @@ from azure.cognitiveservices.vision.computervision.models import OperationStatus
 from msrest.authentication import CognitiveServicesCredentials
 from azure.cognitiveservices.vision.computervision import ComputerVisionClient
 
-load_dotenv()
+#load_dotenv()
 
 
 st.set_page_config(
