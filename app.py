@@ -1,7 +1,5 @@
 import streamlit as st
-#from PIL import Image
 
-#from dotenv import load_dotenv
 import os
 import time
 
@@ -15,7 +13,7 @@ from azure.cognitiveservices.vision.computervision import ComputerVisionClient
 
 st.set_page_config(
     page_title="Ajibola's App",
-    page_icon="✅",
+    page_icon="🚀",
     layout="wide",
     initial_sidebar_state="expanded"
 )
@@ -89,14 +87,14 @@ def main():
         # for image in images:
 
         st.write("")
-        st.write("Classifying...")
+        st.warning("Classifying...")
 
         extracted_text = ""
 
         extracted_text += GetTextRead(uploaded_file)
 
         st.subheader("Extracted Text:")
-        st.write(extracted_text)
+        st.success(extracted_text)
 
 if __name__ == "__main__":
     main()
